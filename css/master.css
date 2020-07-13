@@ -24,9 +24,7 @@ img{
  color: grey;
  font-size: 20px;
 }
-#blocco-contatti ul li{
-  padding: 25px;
-}
+
 #blocco-contatti ul li img{
   margin-top: 15px;;
   margin-left: 0;
@@ -42,13 +40,19 @@ img{
 #blocco-contatti ul li span{
 margin-left: 65px;
 transform: translate(0, -100%);
+}
+#blocco-contatti ul li {
+border-bottom: 1px solid #cccccc;
+}
+.clock{
+  width: 50px;
+  float: right;
 
 }
 #blocco-msg{
   width: 70%;
   height: 100vh;
   border-left: 1px solid #bfbfbf;
-
 }
 .top{
   display: flex;
@@ -75,8 +79,10 @@ span{
 }
 .msg{
   width: 100%;
-  height: 150vh;
+  height: 90vh;
   background-image: url(../img/bkg.png);
+  display: flex;
+  justify-content: space-around;
 }
 input{
   width: 80%;
@@ -88,7 +94,7 @@ input{
   display: flex;
   justify-content: space-around;
   height: 20vh;
-  background-color: #cccccc;
+  border-left: 1px solid #bfbfbf;
 }
 .msg input{
   background-color: #d9ffb3;
@@ -97,4 +103,11 @@ input{
   float: right;
   border: 0;
   border-radius: 5px;
+}
+#colonna-msg-cpu{
+  width: 50%;
+}
+#colonna-msg-utente{
+  width: 50%;
+
 }
