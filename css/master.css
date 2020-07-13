@@ -104,6 +104,9 @@ span{
   display: flex;
   justify-content: space-around;
 }
+.scrollbar{
+  overflow: auto;
+}
 #write input{
   width: 80%;
   height: 50px;
@@ -117,6 +120,7 @@ span{
   justify-content: space-around;
   height: 20vh;
   border-left: 1px solid #bfbfbf;
+
 }
 .msg input{
   background-color: #d9ffb3;
@@ -129,9 +133,11 @@ span{
 }
 #colonna-msg-cpu{
   width: 50%;
+
 }
 #colonna-msg-utente{
   width: 50%;
+
 }
 #invio{
   height: 50px;

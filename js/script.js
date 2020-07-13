@@ -8,7 +8,7 @@ function inserimentoMsg(){
 //   $("button").click(function() {
 //     var myClone = $("#write input").text();
 //     myClone.clone();
-//     $(".msg").append(myClone);
+//     $(".colonna-msg-utente").append(myClone);
 //   });
 // }
 
