@@ -14,6 +14,7 @@ function sendKeyup(event){
     var txt = input.val();
     input.val(" ");
     sendMessage(txt);
+
   }
 }
 
