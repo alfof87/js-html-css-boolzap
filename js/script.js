@@ -25,17 +25,19 @@ function sendMessage(txt){
   target.append(template);
   console.log(txt);
 
-  var msg = $(".template-message-sent");
-  msg.addClass("show");
+  // var msg = $(".template-message-sent");
+  // msg.addClass("show");
+
 }
 
 setTimeout(myFunction, 2000);
 function myFunction(){
   var msg = $(".template-message-sent");
-  
-  if (msg.addClass("show") == true) {
-    var msgCpu = $(".template-message-cpu");
-    msgCpu.addClass("show");
+  msg.addClass("show") == true
+  var msgCpu = $(".template-message-cpu");
+  if (true) {
+
+  msgCpu.addClass("show");
 
   }
   // var msg = $(".template-message-sent");
