@@ -5,18 +5,16 @@ function addSendListener(){
   var target = $("#new-message-input");
   target.keyup(sendKeyup);
 }
+
 function sendKeyup(event){
-
-
-  var key = event.wich;
-  console.log(key);
+  var key = event.which;
+  console.log(event.which);
   if (key === 13) {
     var input = $(this);
     var txt = input.val();
     input.val(" ");
     sendMessage(txt);
   }
-
 }
 
 function sendMessage(txt){
@@ -24,8 +22,9 @@ function sendMessage(txt){
   var target = $("#colonna-msg-utente");
   template.find("#new-message-input").text(txt);
   target.append(template);
-  var msg = $(".msg-utente");
-  msg.addClass(".template-message-sent");
+
+  var msg = $(".template-message-sent");
+  msg.addClass("active");
 }
 
 
