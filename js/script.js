@@ -22,9 +22,11 @@ function sendMessage(txt){
   var target = $("#colonna-msg-utente");
   template.find("#new-message-input").text(txt);
   target.append(template);
+  console.log(txt);
 
   var msg = $(".template-message-sent");
-  msg.addClass("active");
+  msg.addClass("show");
+
 }
 
 

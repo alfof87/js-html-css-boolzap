@@ -159,6 +159,9 @@ span{
   margin-top: 20px;
   display: none;
 }
-.active{
+.show{
   display: block;
+}
+.hide{
+  display: none;
 }
