@@ -25,7 +25,7 @@ function sendMessage(txt){
   var target = $("#colonna-msg-utente");
   target.append(template);
   // template.addClass("show");
-
+  setTimeout(replayMessage, 2000);
 }
 function replayMessage() {
   var txt = "ok";
@@ -34,7 +34,7 @@ function replayMessage() {
   var target = $("#colonna-msg-cpu");
   target.append(template);
 }
-setTimeout(replayMessage, 2000);
+
 
 
 

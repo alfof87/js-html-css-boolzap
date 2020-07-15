@@ -133,7 +133,7 @@ span{
 }
 #colonna-msg-cpu{
   width: 50%;
-
+  margin-top: 50px;
 }
 #colonna-msg-utente{
   width: 50%;
@@ -159,7 +159,7 @@ span{
   border-radius: 5px;
   margin-right: 50px;
   margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .show{
   display: block;
@@ -180,5 +180,5 @@ display: none;
   border-radius: 5px;
   margin-right: 50px;
   margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
