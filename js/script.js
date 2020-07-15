@@ -21,33 +21,21 @@ function sendKeyup(event){
 
 function sendMessage(txt){
   var template = $(".template-message-sent .msg-new").clone();
-  // var target = $("#colonna-msg-utente");
-  // template.find(".msg-new").text(txt);
-  // target.append(template);
-  // console.log(txt);
   template.text(txt);
   var target = $("#colonna-msg-utente");
   target.append(template);
+  // template.addClass("show");
 
-  // var msg = $(".template-message-sent");
-  template.addClass("show");
-  // console.log(template);
 }
 function replayMessage() {
   var txt = "ok";
-  var template = $(".template-message-sent .msg-new").clone();
-  target.text(template);
-  var target = $("#colonna-msg-utente");
+  var template = $(".template-message-cpu .msg-new-cpu").clone();
+  template.text(txt);
+  var target = $("#colonna-msg-cpu");
   target.append(template);
-
 }
+setTimeout(replayMessage, 2000);
 
-// setTimeout(myFunction, 2000);
-// function myFunction(){
-//   $("#new-message-input").keyup(function(){
-//   $("#new-message-input").addClass("show");
-// });
-// }
 
 
 ///////////////////ELENCO CONTATTI (NON FUNZIONANTE)///////////////////

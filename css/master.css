@@ -168,6 +168,10 @@ span{
   display: none;
 }
 .template-message-cpu{
+display: none;
+
+}
+.msg-new-cpu{
   background-color: grey;
   width: 40%;
   height: 50px;
@@ -177,5 +181,4 @@ span{
   margin-right: 50px;
   margin-left: 50px;
   margin-top: 20px;
-  ;
 }
