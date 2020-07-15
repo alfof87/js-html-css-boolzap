@@ -27,7 +27,7 @@ function sendMessage(txt){
 
   // var msg = $(".template-message-sent");
   template.addClass("show");
-  console.log(template);
+  // console.log(template);
 }
 ///////////////////ELENCO CONTATTI (NON FUNZIONANTE)///////////////////
 function addSearchListener(){
@@ -50,7 +50,7 @@ function searchKeyup(){
     }
   });
 }
-
+//////////////////TIME FUNCTION (NON FUNZIONANTE)///////////////////////
 // setTimeout(myFunction, 2000);
 // function myFunction(){
 //   var msg = $(".template-message-sent");
