@@ -148,6 +148,9 @@ span{
   margin-left: 20px;
 }
 .template-message-sent{
+  display: none;
+}
+.msg-new{
   background-color: #d9ffb3;
   width: 40%;
   height: 50px;
@@ -157,7 +160,6 @@ span{
   margin-right: 50px;
   margin-left: 50px;
   margin-top: 20px;
-  display: none;
 }
 .show{
   display: block;

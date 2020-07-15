@@ -13,22 +13,43 @@ function sendKeyup(event){
     var input = $(this);
     var txt = input.val();
     input.val(" ");
+
     sendMessage(txt);
 
   }
 }
 
 function sendMessage(txt){
-  var template = $(".template-message-sent").clone();
+  var template = $(".template-message-sent .msg-new").clone();
+  // var target = $("#colonna-msg-utente");
+  // template.find(".msg-new").text(txt);
+  // target.append(template);
+  // console.log(txt);
+  template.text(txt);
   var target = $("#colonna-msg-utente");
-  template.find("#new-message-input").text(txt);
   target.append(template);
-  console.log(txt);
 
   // var msg = $(".template-message-sent");
   template.addClass("show");
   // console.log(template);
 }
+function replayMessage() {
+  var txt = "ok";
+  var template = $(".template-message-sent .msg-new").clone();
+  target.text(template);
+  var target = $("#colonna-msg-utente");
+  target.append(template);
+
+}
+
+// setTimeout(myFunction, 2000);
+// function myFunction(){
+//   $("#new-message-input").keyup(function(){
+//   $("#new-message-input").addClass("show");
+// });
+// }
+
+
 ///////////////////ELENCO CONTATTI (NON FUNZIONANTE)///////////////////
 function addSearchListener(){
   var target = $("#input-contatti");
@@ -55,10 +76,12 @@ function searchKeyup(){
 // function myFunction(){
 //   var msg = $(".template-message-sent");
 //   var msgCpu = $(".template-message-cpu");
+//   msg.addClass("show") == true;
 //   if (msg.addClass("show") == true) {
 //     msgCpu.removeClass("hide");
 //     msgCpu.addClass("show");
 //   }
+// }
 
 
   // var msg = $(".template-message-sent");
