@@ -162,6 +162,9 @@ span{
 .show{
   display: block;
 }
+.hide{
+  display: none;
+}
 .template-message-cpu{
   background-color: grey;
   width: 40%;
@@ -172,5 +175,5 @@ span{
   margin-right: 50px;
   margin-left: 50px;
   margin-top: 20px;
-  display: none;
+  ;
 }

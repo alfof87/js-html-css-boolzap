@@ -26,20 +26,50 @@ function sendMessage(txt){
   console.log(txt);
 
   // var msg = $(".template-message-sent");
-  // msg.addClass("show");
+  template.addClass("show");
+  console.log(template);
+}
+///////////////////ELENCO CONTATTI (NON FUNZIONANTE)///////////////////
+function addSearchListener(){
+  var target = $("#input-contatti");
+  target.keyup(searchKeyup);
+}
+function searchKeyup(){
+  var input = $(this);
+  var txt = input.val();
 
+  var contacts = $(".contenitore-contatti .contenitore-contatti > a");
+  contacts.each(function() {
+    var contact = $(this);
+    var name = contact.find(".contenitore-contatti p").text();
+
+    if (name.toLowerCase().includes(txt.toLowerCase())){
+      contact.show();
+    }else {
+      contact.hide();
+    }
+  });
 }
 
-setTimeout(myFunction, 2000);
-function myFunction(){
-  var msg = $(".template-message-sent");
-  msg.addClass("show") == true
-  var msgCpu = $(".template-message-cpu");
-  if (true) {
+// setTimeout(myFunction, 2000);
+// function myFunction(){
+//   var msg = $(".template-message-sent");
+//   var msgCpu = $(".template-message-cpu");
+//   if (msg.addClass("show") == true) {
+//     msgCpu.removeClass("hide");
+//     msgCpu.addClass("show");
+//   }
 
-  msgCpu.addClass("show");
 
-  }
+  // var msg = $(".template-message-sent");
+  //
+  // var msgCpu = $(".template-message-cpu");
+  // if (msgCpu.addClass("show") == true) {
+  //
+  // msgCpu.show(template-message-cpu);
+  //
+  //  }
+ //}
   // var msg = $(".template-message-sent");
   // msg.addClass(".show") = true;
   // console.log(msg);
@@ -47,7 +77,7 @@ function myFunction(){
   // if (true) {
   //   msgCpu.addClass("show");
   // }
-}
+//}
 
 
 
