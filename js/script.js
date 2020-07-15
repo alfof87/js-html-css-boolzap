@@ -27,6 +27,7 @@ function sendMessage(txt){
   // template.addClass("show");
   setTimeout(replayMessage, 2000);
 }
+
 function replayMessage() {
   var txt = "ok";
   var template = $(".template-message-cpu .msg-new-cpu").clone();
@@ -47,7 +48,7 @@ function searchKeyup(){
   var input = $(this);
   var txt = input.val();
 
-  var contacts = $(".contenitore-contatti .contenitore-contatti > a");
+  var contacts = $(".contenitore-contatti .nomi");
   contacts.each(function() {
     var contact = $(this);
     var name = contact.find(".contenitore-contatti p").text();
