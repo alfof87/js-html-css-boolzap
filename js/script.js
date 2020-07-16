@@ -37,7 +37,7 @@ function replayMessage() {
 }
 ////////////////Show Option/////////////
 function showOption(){
-$(".template-message-sent .msg-new").click(function(){
+$(".fa-chevron-down").click(function(){
     $(".showOption").toggle();
   });
 }
