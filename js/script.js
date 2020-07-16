@@ -31,11 +31,20 @@ function sendMessage(txt){
 function replayMessage() {
   var txt = "ok";
   var template = $(".template-message-cpu .msg-new-cpu").clone();
-  template.text(txt);
+  template.append(txt);
   var target = $("#colonna-msg-cpu");
   target.append(template);
 }
 ////////////////Show Option/////////////
+$(".fa-chevron-down").click(function(){
+ $(".showOption-user, .showOption-cpu").toggle();
+});
+$("#destroyUser").click(function(){
+ $(".showOption-user").hide();
+});
+$("#destroyCpu").click(function(){
+ $(".showOption-cpu").hide();
+});
 // function showOption(){
 //   $(".fa-chevron-down").click(function(){
 //   $(".showOption").toggle();

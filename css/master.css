@@ -164,6 +164,7 @@ span{
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
+  position: relative;
 }
 .show{
   display: block;
@@ -185,8 +186,33 @@ display: none;
   margin-left: 50px;
   margin-top: 50px;
 }
-.showOption{
-  width: 30%;
-  height: 30px;
-  background-color: red;
+.showOption-user{
+  width: 150px;
+  height: 80px;
+  background-color: #e6ffcc;
+  z-index: 100;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+}
+.showOption-user ul li{
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.showOption-cpu{
+  width: 150px;
+  height: 80px;
+  background-color: grey;
+  z-index: 100;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+}
+.showOption-cpu ul li{
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 }
