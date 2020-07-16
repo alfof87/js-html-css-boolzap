@@ -21,7 +21,7 @@ function sendKeyup(event){
 
 function sendMessage(txt){
   var template = $(".template-message-sent .msg-new").clone();
-  template.text(txt);
+  template.append(txt);
   var target = $("#colonna-msg-utente");
   target.append(template);
   // template.addClass("show");
@@ -36,11 +36,16 @@ function replayMessage() {
   target.append(template);
 }
 ////////////////Show Option/////////////
-function showOption(){
-$(".fa-chevron-down").click(function(){
-    $(".showOption").toggle();
-  });
-}
+// function showOption(){
+//   $(".fa-chevron-down").click(function(){
+//   $(".showOption").toggle();
+//   });
+  // var container = $(".template-message-sent");
+  // var option =$(".showOption");
+  // container.addEventListener("click", function(){
+  //   option.addClass(".show");
+  // });
+// }
 
 
 ///////////////////ELENCO CONTATTI (NON FUNZIONANTE)///////////////////
