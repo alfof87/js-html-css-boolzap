@@ -169,7 +169,6 @@ span{
 }
 .template-message-cpu{
 display: none;
-
 }
 .msg-new-cpu{
   background-color: grey;
@@ -182,6 +181,7 @@ display: none;
   margin-left: 50px;
   margin-top: 50px;
 }
-.fa-chevron-down{
-
+.showOption{
+  width: 30%;
+  height: 30px;
 }

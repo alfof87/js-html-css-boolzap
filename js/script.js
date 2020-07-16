@@ -35,8 +35,12 @@ function replayMessage() {
   var target = $("#colonna-msg-cpu");
   target.append(template);
 }
-
-
+////////////////Show Option/////////////
+function showOption(){
+$(".template-message-sent .msg-new").click(function(){
+    $(".showOption").toggle();
+  });
+}
 
 
 ///////////////////ELENCO CONTATTI (NON FUNZIONANTE)///////////////////
