@@ -45,14 +45,24 @@ function addTestListener(){
 $(document).on("click", ".chevron-utente", function(){
 
   $(".showOption-user").toggle();
-});
+ });
 $(document).on("click", ".chevron-cpu", function(){
 
   $(".showOption-cpu").toggle();
-});
-
+ });
 }
 
+function eraseTestListener(){
+
+$(document).on("click", ".destroyUser", function(){
+
+  $(".msg-new").hide();
+ });
+$(document).on("click", ".destroyCpu", function(){
+
+  $(".msg-new-cpu").hide();
+ });
+}
 // $("#destroyUser").click(function(){
 //  $(".showOption-user").hide();
 // });
@@ -89,5 +99,6 @@ function init(){
 addSendListener();
 addSearchListener();
 addTestListener();
+eraseTestListener();
 }
 $(document).ready(init);
