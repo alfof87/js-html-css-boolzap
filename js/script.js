@@ -42,13 +42,12 @@ function replayMessage() {
 // });
 function addTestListener(){
 
-$(document).on("click", ".chevron-utente", function(){
+  $(document).on("click", ".chevron-utente", function() {
+    $(this).children().toggle();
+  });
 
-  $(".showOption-user").toggle();
- });
 $(document).on("click", ".chevron-cpu", function(){
-
-  $(".showOption-cpu").toggle();
+    $(this).children().toggle();
  });
 }
 
@@ -56,11 +55,12 @@ function eraseTestListener(){
 
 $(document).on("click", ".destroyUser", function(){
 
-  $(".msg-new").hide();
+  $(this).parent().hide();
+  console.log(this);
  });
 $(document).on("click", ".destroyCpu", function(){
 
-  $(".msg-new-cpu").hide();
+  $(this).parentsUntil().hide();
  });
 }
 // $("#destroyUser").click(function(){
