@@ -166,6 +166,7 @@ span{
   flex-direction: row-reverse;
   position: relative;
 }
+
 .show{
   display: block;
 }
@@ -194,6 +195,7 @@ display: none;
   border: 1px solid black;
   border-radius: 5px;
   position: absolute;
+  transform: translate(-100%, 0);
 }
 .showOption-user ul li{
   list-style-type: none;

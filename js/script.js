@@ -35,7 +35,7 @@ function replayMessage() {
   var target = $("#colonna-msg-cpu");
   target.append(template);
 }
-////////////////Show Option/////////////
+////////////////Show/Erase Option/////////////
 $(".fa-chevron-down").click(function(){
  $(".showOption-user, .showOption-cpu").toggle();
 });
