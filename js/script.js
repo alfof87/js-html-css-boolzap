@@ -42,9 +42,15 @@ function replayMessage() {
 // });
 function addTestListener(){
 
-$(document).on("click", ".fa-chevron-down", function(){
-  console.log("hello");
+$(document).on("click", ".chevron-utente", function(){
+
+  $(".showOption-user").toggle();
 });
+$(document).on("click", ".chevron-cpu", function(){
+
+  $(".showOption-cpu").toggle();
+});
+
 }
 
 // $("#destroyUser").click(function(){
@@ -82,5 +88,6 @@ function searchKeyup(){
 function init(){
 addSendListener();
 addSearchListener();
+addTestListener();
 }
 $(document).ready(init);
