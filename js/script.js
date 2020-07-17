@@ -36,17 +36,23 @@ function replayMessage() {
   target.append(template);
 }
 ////////////////Show/Erase Option/////////////
-$(".showOption-user, .showOption-cpu").hide();
-$(".fa-chevron-down").click(function(){
- $(".showOption-user, .showOption-cpu").toggle();
-});
+// $(".showOption-user, .showOption-cpu").hide();
+// $(".fa-chevron-down").click(function(){
+//  $(".showOption-user, .showOption-cpu").toggle();
+// });
+function addTestListener(){
 
-$("#destroyUser").click(function(){
- $(".showOption-user").hide();
+$(document).on("click", ".fa-chevron-down", function(){
+  console.log("hello");
 });
-$("#destroyCpu").click(function(){
- $(".showOption-cpu").hide();
-});
+}
+
+// $("#destroyUser").click(function(){
+//  $(".showOption-user").hide();
+// });
+// $("#destroyCpu").click(function(){
+//  $(".showOption-cpu").hide();
+// });
 
 
 
@@ -75,5 +81,6 @@ function searchKeyup(){
 
 function init(){
 addSendListener();
+addSearchListener();
 }
 $(document).ready(init);
