@@ -36,25 +36,18 @@ function replayMessage() {
   target.append(template);
 }
 ////////////////Show/Erase Option/////////////
+$(".showOption-user, .showOption-cpu").hide();
 $(".fa-chevron-down").click(function(){
  $(".showOption-user, .showOption-cpu").toggle();
 });
+
 $("#destroyUser").click(function(){
  $(".showOption-user").hide();
 });
 $("#destroyCpu").click(function(){
  $(".showOption-cpu").hide();
 });
-// function showOption(){
-//   $(".fa-chevron-down").click(function(){
-//   $(".showOption").toggle();
-//   });
-  // var container = $(".template-message-sent");
-  // var option =$(".showOption");
-  // container.addEventListener("click", function(){
-  //   option.addClass(".show");
-  // });
-// }
+
 
 
 ///////////////////ELENCO CONTATTI (NON FUNZIONANTE)///////////////////
@@ -78,52 +71,7 @@ function searchKeyup(){
     }
   });
 }
-//////////////////TIME FUNCTION (NON FUNZIONANTE)///////////////////////
-// setTimeout(myFunction, 2000);
-// function myFunction(){
-//   var msg = $(".template-message-sent");
-//   var msgCpu = $(".template-message-cpu");
-//   msg.addClass("show") == true;
-//   if (msg.addClass("show") == true) {
-//     msgCpu.removeClass("hide");
-//     msgCpu.addClass("show");
-//   }
-// }
 
-
-  // var msg = $(".template-message-sent");
-  //
-  // var msgCpu = $(".template-message-cpu");
-  // if (msgCpu.addClass("show") == true) {
-  //
-  // msgCpu.show(template-message-cpu);
-  //
-  //  }
- //}
-  // var msg = $(".template-message-sent");
-  // msg.addClass(".show") = true;
-  // console.log(msg);
-  // var msgCpu = $(".template-message-cpu");
-  // if (true) {
-  //   msgCpu.addClass("show");
-  // }
-//}
-
-
-
-// function inserimentoMsg(){
-//   $("button").click(function() {
-//     var myClone = $("#write input").clone();
-//     $("#colonna-msg-utente").append(myClone);
-//   });
-// }
-// function inserimentoMsg(){
-//   $("button").click(function() {
-//     var myClone = $("#write input").text();
-//     myClone.clone();
-//     $(".colonna-msg-utente").append(myClone);
-//   });
-// }
 
 function init(){
 addSendListener();
