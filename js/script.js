@@ -67,7 +67,7 @@ $(document).on("click", ".destroyCpu", function(){
 
 //////////Show background Contact////////////////////////////////
 function addEventListener(){
-  var contatti = $(".nomi");
+  var contatti = $(".contenitore-contatti").children();
   $(contatti).click(function(){
    $(this).addClass(".onclick");
   });
