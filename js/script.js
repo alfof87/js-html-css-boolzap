@@ -64,16 +64,12 @@ $(document).on("click", ".destroyCpu", function(){
   $(this).parentsUntil().hide();
  });
 }
-// $("#destroyUser").click(function(){
-//  $(".showOption-user").hide();
-// });
-// $("#destroyCpu").click(function(){
-//  $(".showOption-cpu").hide();
-// });
+
+//////////Show background Contact////////////////////////////////
 function addEventListener(){
-  var contatti = $(".nomi").children();
+  var contatti = $(".nomi");
   $(contatti).click(function(){
-  $(this).addClass(".onclick");
+   $(this).addClass(".onclick");
   });
 }
 
