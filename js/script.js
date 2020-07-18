@@ -35,7 +35,7 @@ function replayMessage() {
   var target = $("#colonna-msg-cpu");
   target.append(template);
 }
-////////////////Show/Erase Option/////////////
+////////////////Show Option/////////////
 // $(".showOption-user, .showOption-cpu").hide();
 // $(".fa-chevron-down").click(function(){
 //  $(".showOption-user, .showOption-cpu").toggle();
@@ -50,12 +50,13 @@ $(document).on("click", ".chevron-cpu", function(){
     $(this).children().toggle();
  });
 }
-
+////////////Erase Option//////////////////
 function eraseTestListener(){
 
 $(document).on("click", ".destroyUser", function(){
 
-  $(this).parent().hide();
+  $(this).hide();
+
   console.log(this);
  });
 $(document).on("click", ".destroyCpu", function(){
@@ -69,7 +70,12 @@ $(document).on("click", ".destroyCpu", function(){
 // $("#destroyCpu").click(function(){
 //  $(".showOption-cpu").hide();
 // });
-
+function addEventListener(){
+  var contatti = $(".nomi").children();
+  $(contatti).click(function(){
+  $(this).addClass(".onclick");
+  });
+}
 
 
 ///////////////////ELENCO CONTATTI (NON FUNZIONANTE)///////////////////
@@ -84,7 +90,7 @@ function searchKeyup(){
   var contacts = $(".contenitore-contatti .nomi");
   contacts.each(function() {
     var contact = $(this);
-    var name = contact.find(".contenitore-contatti p").text();
+    var name = contact.find(".nomi-p").text();
 
     if (name.toLowerCase().includes(txt.toLowerCase())){
       contact.show();
@@ -100,5 +106,6 @@ addSendListener();
 addSearchListener();
 addTestListener();
 eraseTestListener();
+addEventListener();
 }
 $(document).ready(init);
