@@ -65,11 +65,11 @@ $(document).on("click", ".destroyCpu", function(){
  });
 }
 
-//////////Show background Contact////////////////////////////////
+///////////////Show background Contact////////////////////////////////
 function addEventListener(){
   var contatti = $(".contenitore-contatti").children();
   $(contatti).click(function(){
-   $(this).addClass(".onclick");
+   $(contatti).addClass(".onclick");
   });
 }
 
